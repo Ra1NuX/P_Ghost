@@ -1,22 +1,29 @@
 .console{
     list-style: none;
-    color:gray;
+    color:rgba(102, 71, 71, 0.726);
     padding:0;
     height: 100%;
 }
 #events{
-    padding-left: 25%;
-    padding-right: 25%;
-    width: 50%;
+    padding-left: 0;
+    margin: 2rem;
+    margin-bottom: 1rem;
+
     text-align: center;
-    align-items: center;
+    max-height: 500px;
+    overflow: auto;
+    
 }
 div#chat_box{
-    width: 50% ;
+    width: 25% ;
     border-style: solid;
     border-width: 1px;
     border-color: lightslategray;
-    background-color: gainsboro;
+
+    
+   
+    background-color: rgba(32, 32, 32, 0.082);
+
     padding-bottom: 1rem ;
 }
 #chatform{
@@ -24,16 +31,53 @@ div#chat_box{
     
 }
 #chat-form{
-    margin: 0,auto;
+    width: 300px;
+    margin: 0 auto;
+
 
 }
+
+.chat-send-form{
+   /* padding: 0.3rem; */
+    padding-left: 1rem;
+    background-color: white;
+    display: inline-block;
+    height: 40px;
+    border-radius: 5px;
+}
+
 #chat{
-    width: 300px;
-    height: 30px;
+    padding:0;
+    color: #666;
+    border: none;
+    
+}#chat:focus{
+    outline:none;
+}
+#Send{
+   /* display: inline-block; */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    background-color:grey;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+#Send:focus{
+    outline:none;
+    
+}
+
+#Send:hover{
+    color:white;
+    background-color: lightslategrey;
 }
 li.Client{
     list-style: none;
-    background-color: lightseagreen;
+    background-color: lightgreen;
     text-align: left;
     width: fit-content;
     padding-left: 0.5rem;
@@ -41,10 +85,11 @@ li.Client{
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     margin: 0.5rem;
-    border-radius: 5%;
+    border-top-right-radius: 0.3rem;
     border-width: 1px;
     border-color: black;
 }
+
 
 
 
