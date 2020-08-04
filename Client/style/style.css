@@ -1,3 +1,51 @@
 .console{
-    color:coral;
+    list-style: none;
+    color:gray;
+    padding:0;
+    height: 100%;
 }
+#events{
+    padding-left: 25%;
+    padding-right: 25%;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+div#chat_box{
+    width: 50% ;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightslategray;
+    background-color: gainsboro;
+    padding-bottom: 1rem ;
+}
+#chatform{
+    text-align: center;
+    
+}
+#chat-form{
+    margin: 0,auto;
+
+}
+#chat{
+    width: 300px;
+    height: 30px;
+}
+li.Client{
+    list-style: none;
+    background-color: lightseagreen;
+    text-align: left;
+    width: fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: 0.5rem;
+    border-radius: 5%;
+    border-width: 1px;
+    border-color: black;
+}
+
+
+
+

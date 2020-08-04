@@ -7,10 +7,12 @@ const writeEvent = (text, num) => {
     //
 
     if(num != 0){
-    const el = document.createElement('li');
-    el.innerHTML = text;
 
+    const el = document.createElement('li');
+    el.setAttribute('class', 'Client');
+    el.innerHTML = text;
     parent.appendChild(el);
+
     }else{
     const el = document.createElement('li');
     el.setAttribute('class', 'console');
