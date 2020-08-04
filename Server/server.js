@@ -17,9 +17,14 @@ io.on('connection', (sock) =>{
     sock.emit('message', 'Hi, You are connected', 0);
 
     sock.on('message', (text) => {
-        if(text != '' && text != ' ' && text != '  ' && text != '   ' && text != '    '){
+        if(text != '' && text != ' ' && text != '  ' && text != '   ' && text != '    '){   
         io.emit('message', text);
         }
+    });
+
+    sock.on('name_a', (name) => { 
+        io.emit('name_a', name);
+        
     });
 
 });
