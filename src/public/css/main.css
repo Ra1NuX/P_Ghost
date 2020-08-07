@@ -1,0 +1,39 @@
+body{
+    background: #ECE9E6;  /* fallback for old browsers */
+
+}
+.chat-body{height: 50vh;}
+.close:focus , .btn:focus , .form-control:active{
+    outline:none;
+}
+#chatbox{
+    display: none;
+
+}
+#chat{
+    padding-left: 0;
+    margin: 1rem;
+    margin-bottom: 1rem;
+   
+    max-height: 500px;
+    overflow-y: visible;
+}
+#chat_box{
+    text-align: right;
+}
+.client{
+    list-style: none;
+    background-color: lightgreen;
+
+    width: fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin: 0.25rem;
+    border-bottom-left-radius:0.3rem;
+    border-top-left-radius:0.3rem;
+    border-bottom-right-radius: 0.3rem;
+    border-width: 1px;
+    border-color: black;
+}
