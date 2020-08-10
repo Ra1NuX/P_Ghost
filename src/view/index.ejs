@@ -40,33 +40,41 @@
 
 <!--CHAT-->
     <div class="ml-0 ">
-        <div id="chatbox" class="col-lg-2 px-0">
+        <div class="row mx-0">
+        <div id="chatbox" class="col-lg-3 px-0">
             <div class="card border-light mb-0 shadow">
                 <div class="card-header">
                     <div id="users" class="float-left mb-0"><i class="fas fa-users"></i> 0</div>
-                    <button type="button" class="close" aria-label="Close" id="close">
-                        <span aria-hidden="true">&times;</span>
+                    <button type="button" class="close" aria-label="Close" id="close-chat" data-target=".multi-collapse">
+                        <span aria-hidden="true"id='x'>&times;</span>
                     </button>
                     <div class="text-center">
     
                         <p class="text-danger mb-0">CHAT</p>
                     </div>
                 </div>
-                <div class="card-body chat-body" id="chat_box">
-                    <ul class="" id="chat">
-    
-                    </ul>
-                </div>
-                <div class="card-footer">
-                    <form id="chatForm">
-                        <div class="input-group mb-0">
-                            <input class="form-control" id="inputText" autocomplete="off">
-                            <div class="input-group-append">
-                                <button class="btn btn-info" id="btn-chat"><i class="fab fa-telegram-plane"></i></button>
+                <div class="Chat_box-Out "id="Chat_box-Out">
+                    <div class="card-body chat-body p-2" id="chat_box">
+                        <div class="mr-0 px-0 mb-0" id="chat">
+        
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <form id="chatForm">
+                            <div class="input-group mb-0">
+                                <input class="form-control" id="inputText" autocomplete="off">
+                                <div class="input-group-append">
+                                    <button class="btn btn-info" id="btn-chat"><i class="fab fa-telegram-plane"></i></button>
+                                </div>
                             </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="col">
+            hola</br></br></br></br></br>hola
+        </div>
         </div>
     </div>
 

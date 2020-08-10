@@ -1372,7 +1372,9 @@ pre code {
     margin-left: 91.6666666667%;
   }
 }
-
+@media (min-width: 1280px) {
+  .col-lg-2 {    max-width: 40%; }
+}
 @media (min-width: 992px) {
   .col-lg {
     -ms-flex-preferred-size: 0;

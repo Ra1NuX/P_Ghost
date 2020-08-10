@@ -1,43 +1,47 @@
 module.exports = function (io){
 
-let nicknames = [];
+let users = {};
 let i = 0 ; 
 
 const UpdateUsers = () => {
     io.emit('users', i);
 }
 
-io.on('connection', socket => {
+io.on('connection', socket => { 
 
     socket.on('new user', (data, cb) => {
-        if(nicknames.indexOf(data) != -1){
+        if(data in users){
             cb(true);
-
         }else{
             cb(false);
             socket.nickname = data;
-            nicknames.push(socket.nickname);
-            const indexOfv = nicknames.indexOf(data);
-            console.log(nicknames[indexOfv] +' Connected');
+            users[socket.nickname] = socket;
+            
+            console.log(socket.nickname +' Connected');
             i++;
             UpdateUsers();
         };
     });
 
-    socket.on('send message', (data, cb) => {
-        const message = data; 
-        on 
-    })
+    socket.on('new msg', (msg) => {
+        const message = msg; 
+        io.sockets.emit('message', {
+            msg: message,
+            nick: socket.nickname
+        });
+        
+    });
 
     socket.on('disconnect', data => {
 
         if(!socket.nickname) return;
     
-        const indexOfv = nicknames.indexOf(socket.nickname);
+        
     
-        console.log(nicknames[indexOfv] +' Disconnected')
+        console.log(socket.nickname +' Disconnected');
     
-        nicknames.splice(indexOfv,1);
+
+        delete users[socket.nickname];
         i--; 
     
         UpdateUsers();
