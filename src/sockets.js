@@ -2,6 +2,7 @@ module.exports = function (io){
 
 let users = {};
 let i = 0 ; 
+var n = 1;
 
 const UpdateUsers = () => {
     io.emit('users', i);
@@ -14,7 +15,12 @@ io.on('connection', socket => {
             cb(true);
         }else{
             cb(false);
+            
+
             socket.nickname = data;
+
+            if(socket.nickname == ''){socket.nickname = 'Annonimous' + n + ''; n++;};
+
             users[socket.nickname] = socket;
             
             console.log(socket.nickname +' Connected');
@@ -36,7 +42,6 @@ io.on('connection', socket => {
 
         if(!socket.nickname) return;
     
-        
     
         console.log(socket.nickname +' Disconnected');
     

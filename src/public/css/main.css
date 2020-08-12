@@ -87,3 +87,18 @@ overflow-y: auto;
    background-repeat: no-repeat; /* Do not repeat the image */
    background-size: cover; /* Resize the background image to cover the entire container */
 }
+
+
+.canvasBase{
+background-image: url(https://www.xtrafondos.com/wallpapers/resoluciones/17/textura-de-pasto_1280x768_2946.jpg);
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover; /* Resize the background image to cover the entire container */
+margin-left: 2rem;
+
+margin-top: 2rem;
+}
+.extend{
+    flex: 0 0 100%;
+    max-width: 100%;
+}

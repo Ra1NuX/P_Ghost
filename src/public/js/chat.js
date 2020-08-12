@@ -18,16 +18,20 @@ const $close = $('#close-chat');
 $close.click( () => {
     console.log('cerrando');
     const element = document.querySelector('#Chat_box-Out');
+    const $eChatbox = $('#chatbox');
+    const $elClose = $('#x');
     if(element.classList.contains('Chat_box-Out')){
         element.classList.add('collapse');
         element.classList.replace('Chat_box-Out','collapsed');
-        const $elClose = $('#x');
         $elClose.html(`<i class="fas fa-angle-down"></i>`);
+        $eChatbox.css("flex", "0 0 100%");
+        $eChatbox.css("max-width", "100%");
     }else if(element.classList.contains('collapsed')){
         element.classList.remove('collapse');
         element.classList.replace('collapsed','Chat_box-Out');
-        const $elClose = $('#x');
         $elClose.html(`&times;`);
+        $eChatbox.css("flex", "");
+        $eChatbox.css("max-width", "");
     }
     
 })
