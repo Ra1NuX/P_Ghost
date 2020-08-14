@@ -90,10 +90,10 @@ overflow-y: auto;
 
 
 .canvasBase{
-background-image: url(https://www.xtrafondos.com/wallpapers/resoluciones/17/textura-de-pasto_1280x768_2946.jpg);
-background-position: center; /* Center the image */
-background-repeat: no-repeat; /* Do not repeat the image */
-background-size: cover; /* Resize the background image to cover the entire container */
+background-image: url(https://image.freepik.com/vector-gratis/patron-hecho-hexagonos-trazados_1060-9.jpg);
+
+background-repeat: repeat; /* Do not repeat the image */
+background-size: 55%; /* Resize the background image to cover the entire container */
 margin-left: 2rem;
 
 margin-top: 2rem;
@@ -101,4 +101,16 @@ margin-top: 2rem;
 .extend{
     flex: 0 0 100%;
     max-width: 100%;
+}
+.bgmap{
+    height: 97.5%;
+    margin: 0.5rem;
+    background-image: url(https://20dpercepcionhome.files.wordpress.com/2019/01/map-1.jpg);
+    /* background-image: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg);*/
+     background-position: center; /* Center the image */
+     background-repeat: no-repeat; /* Do not repeat the image */
+     background-size: cover; /* Resize the background image to cover the entire container */
+}
+#canvasBase{ 
+ 
 }
